@@ -32,6 +32,7 @@ async function weather(url){
         let sunset = convertUnixTimestamp(obj.sys.sunset);
         let cityname = obj.name;
         fellsLike =(fellsLike-273).toFixed(2);
+        temp =(temp).toFixed(2);
 
         console.log(temp);
         console.log(desc);
@@ -59,34 +60,34 @@ async function weather(url){
         let imageSrc;
     switch (desc) {
         case "clear sky":
-            imageSrc = "sunny1.png";
+            imageSrc = "./assets/sunny.jpeg";
             break;
         case "few clouds":
-            imageSrc = "cloudy.png";
+            imageSrc = "./assets/cloudy.png";
             break;
         case "scattered clouds":
-            imageSrc = "cloudy.png";
+            imageSrc = "./assets/cloudy.png";
             break;
         case "broken clouds":
-            imageSrc = "cloudy.png";
+            imageSrc = "./assets/cloudy.png";
             break;
         case "shower rain":
-            imageSrc = "rainy.png";
+            imageSrc = "./assets/rainy.png";
             break;
         case "rain":
-            imageSrc = "rainy.png";
+            imageSrc = "./assets/rainy.png";
             break;
         case "thunderstorm":
-            imageSrc = "rainy.png";
+            imageSrc = "./assets/rainy.png";
             break;
         case "snow":
-            imageSrc = "rainy.png";
+            imageSrc = "./assets/rainy.png";
             break;
         case "mist":
-            imageSrc = "mist.png";
+            imageSrc = "./assets/mist.png";
             break;
         default:
-            imageSrc = "sunny.png";
+            imageSrc = "./assets/sunny.png";
             break;
     }
     document.getElementById('img').querySelector('img').src = imageSrc;

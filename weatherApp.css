@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    background-color:rgb(0, 188, 161);
+    height: 80vmax;
+    width: 55vmax;
+    text-align: center;
+}
+    
+body  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div button img{
+    width: 5vmax;
+    height: 5vmax;
+}
+
+#search-box {
+    width: 30vmax; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2 solid #ccc; 
+    border-radius: 25px; 
+    outline: auto; 
+}
+
+#search-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempandCity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+#img {
+    margin-bottom: 20px; /* Add some space between the image and the content */
+}
+
+.tempandCity {
+    text-align: center; 
+    display: inline;
+}
+.temp{
+    text-align: center;
+    font-size: 28px;
+    margin-left: 2vmax;
+}
+.feelslike{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 2vmax;
+}
+.city{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 2vmax;
+}
+.description{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 2vmax;
+}
+
+.bottom-block{
+    display: flex;
+    align-items: normal;
+    
+}
+
+.wind-speed img{
+    width: 18vmax;
+    height: 15vmax;
+    margin-left: 2vmax;
+    margin-right: 7vmax;
+}
+
+.sunrise-set img{
+    margin-bottom: 0vmax;
+    width: 25vmax;
+
+}
+.sunrise{
+    margin-right: 0vmax;
+}
+.susset{
+    margin-right: 3px;
+}

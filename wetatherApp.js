@@ -32,7 +32,7 @@ async function weather(url){
         let sunset = convertUnixTimestamp(obj.sys.sunset);
         let cityname = obj.name;
         fellsLike =(fellsLike-273).toFixed(2);
-        temp =(temp).toFixed(2);
+        temp =(temp -273).toFixed(2);
 
         console.log(temp);
         console.log(desc);
@@ -47,7 +47,7 @@ async function weather(url){
         console.log(sunset);
         console.log(cityname);
 
-        document.querySelector('.temp').innerText = temp -273 + "°C";
+        document.querySelector('.temp').innerText = temp + "°C";
         document.querySelector('.feelslike').innerText = "Feels Like: " + fellsLike + "°C";
         document.querySelector('.description').innerText = desc;
         document.querySelector('.city').innerText = cityname;
